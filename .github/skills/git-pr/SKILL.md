@@ -1,7 +1,6 @@
-```skill
 ---
 name: git-pr
-description: Use this skill to create pull requests (PRs) on GitHub, GitLab, or other platforms.
+description: Use when users ask to create a pull request, open a PR, submit changes for review, or push and create PR. Verifies branch/remote readiness, gathers PR metadata, uses platform-specific CLI when available, and returns the resulting PR URL.
 ---
 
 # Git Pull Request Instructions
@@ -28,5 +27,3 @@ Additional references:
 - Overview: see OVERVIEW.md  
 - Usage details: see USAGE.md
 - Examples: see EXAMPLES.md
-
-```

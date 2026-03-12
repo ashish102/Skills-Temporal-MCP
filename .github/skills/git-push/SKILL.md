@@ -1,7 +1,6 @@
-```skill
 ---
 name: git-push
-description: Use this skill to push local Git commits to a remote repository.
+description: Use when users ask to push changes, publish commits, sync branch to remote, set upstream, or commit and push. Verifies commits to push, remote configuration, branch/upstream status, and performs safe push with clear handling for first push and rejected pushes.
 ---
 
 # Git Push Instructions
@@ -23,5 +22,3 @@ Additional references:
 - Overview: see OVERVIEW.md
 - Usage details: see USAGE.md
 - Examples: see EXAMPLES.md
-
-```

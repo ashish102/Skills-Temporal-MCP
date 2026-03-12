@@ -1,7 +1,6 @@
-```skill
 ---
 name: git-initialization
-description: Use this skill to initialize a new Git repository or check if one already exists.
+description: Use when users ask to initialize git, set up repository version control, create first commit setup, or verify repository initialization state. Detects existing repositories, initializes safely when needed, and supports optional initial configuration.
 ---
 
 # Git Initialization Instructions
@@ -16,5 +15,3 @@ Additional references:
 - Overview: see OVERVIEW.md
 - Usage details: see USAGE.md
 - Examples: see EXAMPLES.md
-
-```

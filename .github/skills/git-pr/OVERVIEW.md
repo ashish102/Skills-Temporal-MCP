@@ -1,49 +1,19 @@
 # Git Pull Request Skill Overview
 
 ## Purpose
-This skill handles the creation of pull requests (PRs) on remote Git platforms like GitHub, GitLab, and Bitbucket. It streamlines the process of proposing code changes for review and merging.
+Create a pull request or merge request from the current branch.
 
-## Key Features
-- **Multi-Platform Support**: Works with GitHub, GitLab, Bitbucket, and other platforms
-- **CLI Integration**: Uses platform-specific CLI tools (gh, glab) when available
-- **Web Fallback**: Provides web URLs when CLI tools are unavailable
-- **Smart Defaults**: Uses commit messages and branch names for PR title/description
-- **Full Customization**: Supports reviewers, labels, draft status, and more
-- **Pre-flight Checks**: Validates branch status and push state before creating PR
+## Flow Summary
+1. Confirm current branch is not target branch.
+2. Ensure commits are pushed.
+3. Detect hosting platform from remote URL.
+4. Use platform CLI when available.
+5. Otherwise provide web URL and required fields.
+6. Return created PR URL.
 
-## When to Use
-- Proposing code changes for review
-- Contributing to open source projects
-- Collaborating on team projects
-- Requesting code review before merging
-- Documenting changes with detailed descriptions
-
-## Platform Support
-
-### GitHub (gh CLI)
-- Create, view, edit, and merge PRs
-- Set reviewers, assignees, labels
-- Create draft PRs
-- Link to issues
-- Auto-fill from commit messages
-
-### GitLab (glab CLI)
-- Create merge requests
-- Set reviewers and approvers
-- Add labels and milestones
-- Create draft/WIP MRs
-- Link to issues
-
-### Bitbucket
-- Create pull requests via web
-- Set reviewers
-- Link to JIRA issues
+## Guardrails
+- Do not create PR from `main`/`master` to itself.
+- Collect missing metadata (title/body/base/reviewers) before creation.
 
 ## Prerequisites
-- Branch with commits pushed to remote
-- Not currently on the target branch (main/master)
-- Platform CLI tool installed (recommended):
-  - GitHub: `gh` CLI
-  - GitLab: `glab` CLI
-- Authentication configured for the platform
-- Write access to create PRs in the repository
+- Branch is pushed and user has repo access.

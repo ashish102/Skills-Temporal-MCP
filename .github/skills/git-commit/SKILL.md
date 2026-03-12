@@ -1,7 +1,6 @@
-```skill
 ---
 name: git-commit
-description: Use this skill to stage changes and create Git commits with meaningful messages.
+description: Use when users ask to commit changes, save work, create a commit, stage files and commit, or commit and push. Ensures safe staging scope selection (all vs specific files), staged diff review, meaningful commit messages, and commit confirmation with hash.
 ---
 
 # Git Commit Instructions
@@ -19,4 +18,3 @@ Additional references:
 - Usage details: see USAGE.md
 - Examples: see EXAMPLES.md
 
-```
